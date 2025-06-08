@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keranjang - MFASHOE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Keranjang MFASHOE</h1>
+    <nav>
+      <a href="index.html">Kembali ke Produk</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="cart-items" class="cart-section"></div>
+    <div id="cart-summary" class="cart-section"></div>
+    <div style="text-align: center; padding: 1em;">
+      <button onclick="clearCart()">Hapus Keranjang</button>
+      <a id="checkout-link" target="_blank" style="display:none;">
+        <button>Checkout via WhatsApp</button>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Kontak: WhatsApp 082148753453 | IG: @melanifau_ | TikTok: @ujiiann</p>
+  </footer>
+
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', renderCart);
+  </script>
+</body>
+</html>
